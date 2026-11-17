@@ -533,4 +533,3 @@ $1.200.000 × 15 % = $180.000 CLP
 ---
 
 **Resultado final:** el servicio no cumple globalmente el SLA y corresponde un crédito de 15 %, equivalente a $180.000 CLP netos.
-EOF
