@@ -1,1 +1,67 @@
+caso:
+  cliente: "Agrícola Valle de Elqui SpA"
+  proveedor: "NorteNet Telecomunicaciones"
+  servicio: "Internet dedicado simétrico"
+  periodo: "septiembre de 2026"
+  dias_periodo: 30
+  minutos_periodo: 43200
+  cargo_mensual_clp: 1200000
+  ancho_banda_contratado_mbps: 200
+
+objetivos_sla:
+  disponibilidad:
+    minimo_porcentaje: 99.9
+    metodo: "Minutos de indisponibilidad atribuibles al proveedor"
+
+  latencia:
+    maximo_ms: 30.0
+    estadistico: "promedio mensual"
+    metodo: "ICMP cada 60 segundos desde el CPE"
+
+  jitter:
+    maximo_ms: 10.0
+    estadistico: "promedio mensual ponderado"
+    metodo: "TWAMP desde la demarcación"
+
+  perdida_paquetes:
+    maximo_porcentaje: 0.5
+    estadistico: "promedio mensual"
+    metodo: "TWAMP desde la demarcación"
+
+  throughput:
+    minimo_porcentaje_contratado: 90.0
+    minimo_mbps: 180.0
+    cantidad_minima_pruebas: 4
+    metodo: "iperf3 TCP"
+
+  tiempo_respuesta:
+    maximo_minutos: 60
+    cumplimiento_requerido_porcentaje: 100.0
+
+  mttr:
+    maximo_minutos: 240
+    aplica_a: "Incidentes atribuibles al proveedor"
+
+  cobertura:
+    minimo_porcentaje: 90.0
+
+exclusiones:
+  aviso_mantencion_horas: 72
+  maximo_mantencion_programada_horas_mes: 4
+  causas_cliente: true
+  cortes_electricos_cliente: true
+  fuerza_mayor_acreditada: true
+
+creditos:
+  disponibilidad:
+    - desde_porcentaje: 99.5
+      hasta_porcentaje: 99.9
+      incluye_desde: true
+      incluye_hasta: false
+      credito_porcentaje: 10.0
+
+  tiempo_respuesta:
+    credito_porcentaje: 5.0
+
+  maximo_acumulado_porcentaje: 50.0
 
