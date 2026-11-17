@@ -1,4 +1,3 @@
-cat > ejemplos/caso-valle-elqui/informe.md <<'EOF'
 # Informe de Verificación del Acuerdo de Nivel de Servicio
 
 ## EVA 3: Caso Agrícola Valle de Elqui SpA
@@ -491,6 +490,14 @@ Los resultados numéricos incluidos en el informe pueden verificarse mediante:
 - Los objetivos del archivo `objetivos.yaml`.
 - El código fuente de `calc_sla.py`.
 - La salida reproducible `salida_calc.txt`.
+
+### 9.5 Declaración de uso de inteligencia artificial
+
+Se utilizó Microsoft Copilot como herramienta de apoyo para organizar la estructura del repositorio, revisar la redacción técnica, proponer el código de automatización y comprobar los procedimientos de cálculo.
+
+Los antecedentes del caso, las métricas, los resultados y las conclusiones fueron revisados mediante los archivos de entrada y la ejecución de la calculadora. La inteligencia artificial no reemplazó la validación técnica ni la ejecución reproducible de los cálculos.
+
+---
 
 ## 10. Anexos
 
