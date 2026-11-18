@@ -1,0 +1,45 @@
+RESULTADOS DE VERIFICACION DEL SLA
+========================================
+
+1. DISPONIBILIDAD
+Caida atribuible: 160 minutos
+Disponibilidad: 99.63 %
+Caida permitida: 43.20 minutos
+Exceso: 116.80 minutos
+Veredicto: NO CUMPLE
+
+2. LATENCIA
+Promedio mensual: 27.40 ms
+Cobertura: 98.90 %
+Veredicto: CUMPLE
+
+3. JITTER
+Promedio ponderado: 9.92 ms
+Muestras: 42725
+Cobertura: 98.90 %
+Veredicto: CUMPLE
+
+4. PERDIDA DE PAQUETES
+Valor observado: 0.31 %
+Cobertura: 60.00 %
+Veredicto: EVIDENCIA INSUFICIENTE
+
+5. THROUGHPUT
+Cantidad de pruebas: 4
+Promedio: 180.75 Mbps
+Veredicto: CUMPLE
+
+6. TIEMPO DE RESPUESTA
+Tiempo maximo: 66 minutos
+Incumplimientos: 1
+Veredicto: NO CUMPLE
+
+7. MTTR
+Mayor restauracion: 75 minutos
+Veredicto: CUMPLE
+
+8. CREDITO
+Credito por disponibilidad: 10 %
+Credito por respuesta: 5 %
+Credito total: 15 %
+Monto neto: $180.000 CLP

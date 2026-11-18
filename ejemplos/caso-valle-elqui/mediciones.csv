@@ -1,0 +1,24 @@
+tipo,id,fecha,inicio,fin,duracion_minutos,valor,muestras,unidad,metodo,origen,clasificacion,observacion
+evento,E1,2026-09-03,02:00,05:30,210,,,minutos,Registro de indisponibilidad,Proveedor,excluido,Mantencion programada avisada con mas de 72 horas
+evento,E2,2026-09-09,14:12,15:07,55,,,minutos,Registro de indisponibilidad,Proveedor,atribuible,Corte de fibra por obras viales en el tramo de acceso
+evento,E3,2026-09-15,10:40,12:25,105,,,minutos,Registro de indisponibilidad,Cliente,excluido,Corte electrico en la planta del cliente sin respaldo UPS
+evento,E4,2026-09-21,22:05,23:20,75,,,minutos,Registro de indisponibilidad,Proveedor,atribuible,Falla de tarjeta de linea en el PE La Serena
+evento,E5,2026-09-27,08:30,09:00,30,,,minutos,Registro de indisponibilidad,Proveedor,atribuible,Mantencion avisada con solo 14 horas y 30 minutos
+latencia,LAT-01,2026-09-30,,,,27.4,42725,ms,ICMP cada 60 segundos,Cliente,valida,RTT promedio mensual desde el CPE
+latencia,LAT-P95,2026-09-30,,,,41.2,42725,ms,ICMP cada 60 segundos,Cliente,referencia,Percentil 95 no contractual
+latencia,LAT-MAX,2026-09-30,,,,118.0,42725,ms,ICMP cada 60 segundos,Cliente,referencia,Valor maximo no contractual
+jitter,JIT-S1,2026-09-07,,,,9.0,9870,ms,TWAMP,Cliente,valida,Semana 1
+jitter,JIT-S2,2026-09-14,,,,10.5,10025,ms,TWAMP,Cliente,valida,Semana 2
+jitter,JIT-S3,2026-09-21,,,,13.8,9900,ms,TWAMP,Cliente,valida,Semana 3
+jitter,JIT-S4,2026-09-30,,,,7.2,12930,ms,TWAMP,Cliente,valida,Semana 4
+perdida,PER-CLIENTE,2026-09-18,,,,0.31,25920,porcentaje,TWAMP desde la demarcacion,Cliente,insuficiente,Cobertura aproximada de 60 por ciento
+perdida,PER-PROVEEDOR,2026-09-30,,,,0.18,,porcentaje,Medicion PE a core,Proveedor,no_valida,No fue medida desde la demarcacion
+throughput,THR-01,2026-09-05,,,,186.0,,Mbps,iperf3 TCP,Cliente,valida,Prueba valida desde puerto LAN del CPE
+throughput,THR-02,2026-09-12,,,,182.0,,Mbps,iperf3 TCP,Cliente,valida,Prueba valida desde puerto LAN del CPE
+throughput,THR-03,2026-09-19,,,,171.0,,Mbps,iperf3 TCP,Cliente,valida,Prueba valida desde puerto LAN del CPE
+throughput,THR-04,2026-09-26,,,,184.0,,Mbps,iperf3 TCP,Cliente,valida,Prueba valida desde puerto LAN del CPE
+throughput,SPEEDTEST,2026-09-30,,,,95.0,,Mbps,Speedtest mediante WiFi,Cliente,no_valida,Metodo y punto de medicion no contractuales
+respuesta,INC-2611,2026-09-09,14:18,14:41,23,,,minutos,Sistema de tickets,Proveedor,valida,Cumple el limite de 60 minutos
+respuesta,INC-2648,2026-09-15,10:47,11:20,33,,,minutos,Sistema de tickets,Proveedor,valida,Cumple el limite de 60 minutos
+respuesta,INC-2672,2026-09-21,22:09,23:15,66,,,minutos,Sistema de tickets,Proveedor,valida,Supera el limite contractual en 6 minutos
+respuesta,INC-2690,2026-09-27,08:33,08:40,7,,,minutos,Sistema de tickets,Proveedor,valida,Cumple el limite de 60 minutos
